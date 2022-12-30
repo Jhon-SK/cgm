@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     $('.project-slick').slick({
       slidesToShow: 3,
-      dots:true,
+      dots: false,
       arrows: true,
       infinite: false,
       responsive: [
@@ -33,7 +33,7 @@ $(document).ready(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -55,6 +55,7 @@ $(document).ready(function(){
         // instead of a settings object
       ]
       });
+<<<<<<< HEAD
       
       $('.btn-submit').on('click',function(){
 
@@ -92,5 +93,42 @@ $(document).ready(function(){
               return false;
       
       }
+=======
+
+>>>>>>> db595040f6bc8f41d1d4a40380df3c7104f45a85
  });
 
+      
+ $('#numero_documento').maxlength({max: 8, showFeedback: false});
+ $('#nombre').maxlength({max: 50, showFeedback: false});
+ $('#telefono').maxlength({max: 9, showFeedback: false});
+ $('#lugar').maxlength({max: 50, showFeedback: false});
+ $('#requerimientos').maxlength({max: 200, showFeedback: false});
+ 
+ $("#tipo_documento").change(function(){
+     $("#divInputTipDoc").html("");
+     $("#divInputTipDoc").html('<input type="number" class="form-control" placeholder="DNI O RUC" style="background-color: #F4F7FB; color:#373737; font-weight: bold;" id="numero_documento" name="numero_documento" required>' +
+                                 '<label for="floatingInput" style="color: #B2B1B9; font-weight: bold;" required>DNI O RUC</label>');
+     if( $(this).val() == "DNI" )
+     {
+         $('#numero_documento').maxlength({max: 8, showFeedback: false});
+     }
+     else 
+     {
+         $('#numero_documento').maxlength({max: 11, showFeedback: false});
+     }
+ });
+ 
+ $('#nombre').keypress(function(){
+     lettersOnly();
+ });
+ 
+ function lettersOnly(e) 
+ {
+     var charCode = e.keyCode;
+     if ((charCode > 64 && charCode < 91) || charCode == 32 || (charCode > 96 && charCode < 123) || charCode == 8)
+         return true;
+     else
+         return false;
+ 
+ }

@@ -308,14 +308,14 @@ ul.header-top-left-info-box li i {
 }
 
 ul.header-top-left-info-box li .short-info {
-    font-size: 18px;
+    font-size: 12px;
     text-transform: capitalize;
     color: #777777;
     font-weight: 400;
 }
 
 ul.header-top-left-info-box li .short-info h4 {
-    font-size: 19px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 18px;
     margin: 0;
@@ -2679,7 +2679,7 @@ blockquote.wp-block-quote cite:before {
     position: relative;
     height: 100%;
     max-height: 400px;
-    background-image: url(assets/img/footer/1.jpg);
+    background-image: url(assets/img/footer/1.webp);
     background-color: #1a2b3c;
     background-repeat: no-repeat;
 }
@@ -3439,7 +3439,46 @@ ul.contact-info li a {
     text-align: center;
     margin: 0;
 }
+
+.mean-container a.meanmenu-reveal {
+    border: 1px solid #444;
+    color: #444;
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: -62px !important;
+    margin-right: 15px;
+    /* margin-bottom: -36px; */
+    /* margin-bottom: -100px; */
+    padding: 8px 9px;
+    position: absolute;
+    padding-top: 11px;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    height: 27px;
+    width: 28px;
+}
+.logo-start {
+    padding:12px;
+}
+.section-title p.services-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+@media (max-width: 360px) {
+
+}
+
 @media (max-width: 768px) {
+    .logo-start {
+        padding:0px;
+    }
     .header-logo a img {
         max-width: 20%
     }
@@ -3458,5 +3497,11 @@ ul.contact-info li a {
     }
     .laundryka-breadcrumb-area h2 {
         font-size: 60px;
+    }
+    ul.header-top-left-info-box li .short-info {
+        font-size: 12px;
+    }
+    ul.header-top-left-info-box li .short-info h4 {
+        font-size: 18px;
     }
 }
