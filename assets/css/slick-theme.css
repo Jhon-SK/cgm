@@ -106,11 +106,16 @@
 }
 .slick-next:before
 {
-    content: '\2192';
+    background: url(./assets/img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\2192';
+    background: url(./assets/img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Dots */

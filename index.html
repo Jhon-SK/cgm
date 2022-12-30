@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>CGM EIRL - SERVICIOS GENERALES</title>
-	<meta name="description" content="Servicios Generales CGM E.I.R.L. es una empresa dedicada a diversos rubros como obras civiles y servicios generales. Con el compromiso de brindarle el mejor servicio cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes." />
+	<meta name="description" content="Servicios Generales CGM E.I.R.L. es una empresa dedicada a diversos rubros como obras civiles y servicios generales. Con el compromiso de brindar servicios profesionales cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes." />
 	<meta name="keywords" content="clean, cleaner, cleaning, Cleaning Business, Cleaning Service, clothing repair, dry cleaning, ironing, laundry, laundry press, laundry psd template, laundry service, wash, wash business, washing" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -45,17 +45,27 @@
 				<div class="row">
 					<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 header-left">
 						<ul class="header-top-left-info-box unlisted">
-							<li> <i class="fa fa-phone"></i>
+							<li> 
+								<a aria-label="video" href="tel:51950118191">
+									<i class="fa fa-phone"></i>
+								</a> 
+								
 								<div class="short-info"> Teléfono / Whatsapp
 									<a href="tel:51950118191"><h4>950 118 191</h4></a> 
 								</div>
 							</li>
-							<li> <i class="fa fa-at"></i>
+							<li>
+								<a href="mailto:contacto@cgm.com">
+									<i class="fa fa-at"></i>
+								</a>
 								<div class="short-info"> Correo electrónico:
 									<a href="mailto:contacto@cgm.com"><h4>contacto@cgm.com</h4></a> 
 								</div>
 							</li>
-							<li> <i class="fa fa-map-marker"></i>
+							<li> 
+								<a href="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank">
+									<i class="fa fa-map-marker"></i>
+								</a>
 								<div class="short-info"> Dirección:
 									<a href="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank"><h4>Surquillo | Lima - Perú</h4></a> 
 								</div>
@@ -81,7 +91,7 @@
 						<div class="main-menu-area text-center">
 							<div class="main-menu">
 								<nav id="mobile-menu">
-									<ul style="margin-left: 7%;">
+									<ul class="header-sub-area">
 										<li><a href="#inicio">Inicio</a></li>
 										<li><a href="#nosotros">Nosotros</a></li>
 										<li><a href="#servicios">Servicios</a></li>
@@ -110,7 +120,7 @@
 						<div class="row">
 							<div class="col-xl-8 col-lg-10 col-md-12">
 								<div class="laundryka-single-slider-content">
-									<h4>Eres siempre bienvenido!</h4>
+									<h4>¡Eres siempre bienvenido!</h4>
 									<h2>Los mejores servicios <br/> en un solo lugar</h2>
 									<div class="slider-area-btn"> <a href="#nosotros" class="lbtn btn-typ2" data-tilt>Saber más <span></span></a> <a href="#contacto" class="lbtn btn-typ3" data-tilt>Contáctanos <span></span></a> </div>
 								</div>
@@ -144,8 +154,7 @@
 					<div class="laundryka-about-content" data-aos="fade-left" data-aos-duration="2000">
 						<h2>QUIENES <span>SOMOS</span></h2>
 						<p class="text-justify">Servicios Generales CGM E.I.R.L. es una empresa dedicada a diversos rubros como
-							obras civiles y servicios generales. Con el compromiso de brindarle el mejor servicio
-							cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes.</p>
+							obras civiles y servicios generales. Con el compromiso de brindar servicios profesionales cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes.</p>
 						<div class="about-chariti-list-area mb-20">
 							<ul class="about-chariti-list">
 								<li><i class="fa fa-check"></i> Puntualidad y compromiso</li>
@@ -482,7 +491,7 @@
 	</div>
 </div>
 <!-- Laundryka Services Area end -->	
-	<div class="laundryka-services-area mb-200" id="clientes">
+	<div class="laundryka-services-area mb-100" id="clientes">
 		<div class="services-style-bg-img"> 
 			<!-- <img data-parallax='{"x": 150}' class="lss-1" src="assets/img/services/s1.png" alt="img" /> 
 			<img data-parallax='{"y": 200}' class="lss-2" src="assets/img/services/s2.png" alt="img" />  -->
@@ -727,64 +736,38 @@
                 <div class="row">
                     <div class="col-md-6 p-3">
                         <div class="form-floating">
-                            <select class="form-select" style="background-color: #F4F7FB; color:#373737; " id="tipo_documento" name="tipo_documento">
-                                <option value="DNI" style="color: #373737; ">DNI</option>
-                                <option value="RUC" style="color: #373737; ">RUC</option>
-                            </select>
-                            <label for="floatingSelectGrid" style="color: #373737; ">TIPO DE DOCUMENTO</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-3">
-                        <div id="divInputTipDoc" class="form-floating">
-                            <input type="number" class="form-control" placeholder="DNI O RUC" style="background-color: #F4F7FB; color:#373737; " id="numero_documento" name="numero_documento" required>
-                            <label for="floatingInput" style="color: #B2B1B9; " required>DNI O RUC</label>
-                            <span id="error_numero_documento" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <!--<div id="alertCotizacionNumeroDocumento" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 p-3">
-                        <div class="form-floating">
                             <input type="text" class="form-control" placeholder="Nombre" style="background-color: #F4F7FB; color:#373737; " id="nombre" name="nombre" required onkeypress="return lettersOnly(event)">
                             <label for="floatingInput" style="color: #B2B1B9; " required>NOMBRE</label>
                         </div>
                         <span id="error_nombre" class="text-danger"></span>
                     </div>
-                    <!--<div id="alertCotizacionNonbre" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->
-                    <div class="col-md-6 p-3">
+					<div class="col-md-6 p-3">
                         <div class="form-floating">
-                            <input type="number" class="form-control" placeholder="Nombre" style="background-color: #F4F7FB; color:#373737; " id="telefono" name="telefono" required>
+                            <input type="text" class="form-control" placeholder="Apellidos" style="background-color: #F4F7FB; color:#373737; " id="nombre" name="apellidos" required onkeypress="return lettersOnly(event)">
+                            <label for="floatingInput" style="color: #B2B1B9; " required>APELLIDO</label>
+                        </div>
+                        <span id="error_nombre" class="text-danger"></span>
+                    </div>
+                    <!--<div id="alertCotizacionNonbre" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->
+                    <!--<div id="alertCotizacionTelefono" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->
+                </div>
+                <div class="row">
+					<div class="col-md-6 p-3">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" placeholder="Teléfono" style="background-color: #F4F7FB; color:#373737; " id="telefono" name="telefono" required>
                             <label for="floatingInput" style="color: #B2B1B9; " required>TELEFONO</label>
                         </div>
                         <span id="error_telefono" class="text-danger"></span>
                     </div>
-                    <!--<div id="alertCotizacionTelefono" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 p-3">
+                    <div class="col-md-6 p-3">
                         <div class="form-floating">
-                            <input type="text" class="form-control" placeholder="Nombre" style="background-color: #F4F7FB; color:#373737; " id="lugar" name="lugar" required>
-                            <label for="floatingInput" style="color: #B2B1B9; " required>LUGAR DE DESPACHO</label>
+                            <input type="text" class="form-control" placeholder="Descripción" style="background-color: #F4F7FB; color:#373737; " id="lugar" name="descripcion" required>
+                            <label for="floatingInput" style="color: #B2B1B9; " required>DESCRIPCIÓN</label>
                         </div>
                         <span id="error_lugar" class="text-danger"></span>
                     </div>
                     <!--<div id="alertCotizacionLugar" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->  
                 </div>
-
-                <div class="row">
-                    <div class="col-md-12 pt-3 ps-3 pe-3">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Requerimientos" style="background-color: #F4F7FB; color:#373737; height: 100px; " id="requerimientos" name="requerimientos" required></textarea>
-                            <label for="floatingTextarea2" style="color: #B2B1B9; " required>REQUERIMIENTOS</label>
-                        </div>
-                        <span id="error_requerimientos" class="text-danger"></span>
-                    </div>
-                    <!--<div id="alertCotizacionRequerimientos" class="alert alert-danger alert-dismissible fade show d-none" role="alert"></div>-->  
-                </div>
-
                 <!--<div class="row text-center">
                     <div class="col-md-12 p-3">
                        
@@ -862,7 +845,7 @@
 					<div class="footer-single-wedget">
 						<div class="custom-html-widget">
 							<h3>ACERCA DE</h3>
-							<p class="text-justify">Servicios Generales CGM E.I.R.L. es una empresa dedicada a diversos rubros como obras civiles y servicios generales. Con el compromiso de brindarle el mejor servicio cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes.</p>
+							<p class="text-justify">Servicios Generales CGM E.I.R.L. es una empresa dedicada a diversos rubros como obras civiles y servicios generales. Con el compromiso de brindar servicios profesionales cumpliendo con los estándares de calidad, costos y expectativas de nuestros clientes.</p>
 							<ul class="footer-social">
 								<li><a href="https://www.facebook.com/" target="_blank" aria-label="footer"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="https://linkedin.com/" target="_blank" aria-label="footer"><i class="fa fa-linkedin"></i></a></li>
@@ -877,20 +860,9 @@
 	<div class="footer-copyright-menu-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+				<div class="col-xl-12 col-lg-6 col-md-6 col-sm-12" style="text-align: center;">
 					<div class="footer-copyright pt-20 pb-20">
 						<p>&copy; 2022 <a href="http://cgm.com.pe/">CGM EIRL</a> Todos los derechos reservados</p>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-					<div class="footer-menu-area float-right">
-						<nav class="footer-menu">
-							<ul>
-								<!-- <li><a href="#" aria-label="footer">about</a></li>
-								<li><a href="#" aria-label="footer">services</a></li>
-								<li><a href="#" aria-label="footer">help</a></li> -->
-							</ul>
-						</nav>
 					</div>
 				</div>
 			</div>

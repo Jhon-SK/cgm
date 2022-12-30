@@ -1436,7 +1436,7 @@ ul.about-chariti-list li i {
 .services-bg-img {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 225px;
     height: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -2254,10 +2254,10 @@ ul.price-nav li:nth-child(2) button {
     width: 50px;
     height: 50px;
     text-align: center;
-    color: #fff;
-    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
-    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
-    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    color: #000;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
     position: absolute;
     top: 30px;
     right: 30px;
@@ -3368,7 +3368,10 @@ ul.contact-info li a {
 .header-top-area .container .row div.header-left {
     margin-right: 0;
     text-align: end;
-    margin-left: 45%
+    margin-left: 460px;
+}
+ul.header-sub-area {
+    margin-left: 302px
 }
 .popup {
     background-color: rgba(0, 0, 0, 0.6);
@@ -3471,10 +3474,32 @@ ul.contact-info li a {
     font-size: 20px;
     margin-bottom: 0;
 }
+.footer-single-wedget .widget_nav_menu .menu li a:hover {
+    color: grey;
+}
+
+li a i:hover {
+    color: grey;
+}
 @media (max-width: 360px) {
 
 }
-
+@media (max-width: 1280px) {
+    ul.header-sub-area {
+        margin-left: 152px;
+    }
+    .header-top-area .container .row div.header-left {
+        margin-left: 403px;
+    }
+}
+@media (max-width: 1386px) {
+    ul.header-sub-area {
+        margin-left: 152px;
+    }
+    .header-top-area .container .row div.header-left {
+        margin-left: 403px;
+    }
+}
 @media (max-width: 768px) {
     .logo-start {
         padding:0px;
