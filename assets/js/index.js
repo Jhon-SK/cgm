@@ -55,8 +55,6 @@ $(document).ready(function(){
         // instead of a settings object
       ]
       });
-<<<<<<< HEAD
-      
       $('.btn-submit').on('click',function(){
 
       })
@@ -93,9 +91,6 @@ $(document).ready(function(){
               return false;
       
       }
-=======
-
->>>>>>> db595040f6bc8f41d1d4a40380df3c7104f45a85
  });
 
       
