@@ -9,14 +9,15 @@
 
 
 $(document).ready(function(){
-    $(".btn-more").click(function(){
+    $(".btn-more").click(function(e){
        $(this).parent().prev().find('.more').fadeToggle();
        $(this).parent().prev().find('.dots').toggle();
-       if($(this).text()=='Leer más'){
-     $(this).text('leer menos');
+       $(this).toggleClass('active')
+       if($(this).hasClass('active')){
+        $(this).text('Leer menos');
        }
        else{
-     $(this).text('Leer más');
+        $(this).text('Leer más');
        }
     });
 
@@ -55,6 +56,9 @@ $(document).ready(function(){
       ]
       });
       
+      $('.btn-submit').on('click',function(){
+
+      })
       $('#numero_documento').maxlength({max: 8, showFeedback: false});
       $('#nombre').maxlength({max: 50, showFeedback: false});
       $('#telefono').maxlength({max: 9, showFeedback: false});
