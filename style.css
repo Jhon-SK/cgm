@@ -1,0 +1,3393 @@
+/*
+  Theme Name: Laundryka - Dry Cleaning Services HTML5 Template v-2
+  Author: theme_group
+  Support: robiulislamfree@gmail.com
+  Description: laundryka is a HTML5 template which fits for all kind of Charity, Fund raising, Nonprofit, NGO, Social Working, and other non-profit website for all your needs.
+  Tags: clean, cleaner, cleaning, Cleaning Business, Cleaning Service, clothing repair, dry cleaning, ironing, laundry, laundry press, laundry psd template, laundry service, wash, wash business, washing
+  Version: 1.2
+*/
+/* CSS Index
+-----------------------------------
+ /* 
+1.	Theme Default
+2.	Pre Loader
+3.	Header Top Area Css Style
+4.	Header Top Menu Area Css Style
+		i. main menu area css
+		ii. sub menu area css
+		iii. search form area css
+5.	Laundryka Slider Area Css Style
+		i. Laundryka Slider2 Area Css Style
+6.	Laundryka Workes Steap Area Css Style
+		i. Laundryka Workes Steap Style2 Area Css Style
+7.	Laundryka About area css
+8.	Laundryka Services Area css
+		i. Laundryka Services2 Area css
+		ii. Laundryka App cta Area css
+9.	Laundryka Testimonial Area css
+10.	Laundryka Pricing Table Area css
+11.	Laundryka Counter Area css
+12.	Laundryka Team Area css
+13.	Laundryka CTA Area css
+14.	Laundryka Blog Area css
+		i. Post Date Admin Comments Number Area Css Style
+		ii. Blog Quote Area Css Style
+		iii. Post Tags Area Css Style
+		iv. Blog Comments Area Css Style
+		iv. Blog Comments Form Area Css Style
+15.	Laundryka Footer Area css
+16.	Footer Copyright Area css
+17.	Laundryka breadcrumb area css
+18.	Laundryka Shop Area css
+	i. Shop Quantity Style Css
+	ii. Product Meta area style css
+	iii. Product Rivew Area Style Css
+19.	Contact Form Area Css Style
+20.	Google Map Area Css Style
+21.	Contact Info  Area Css Style
+21.	Laundryka Error Area Css Style
+
+ */
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700|Ubuntu:400,500,700&display=swap');
+
+@font-face {
+    font-family: BebasKai;
+    src: url(./assets/fonts/BebasKai.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Theme Default */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    line-height: inherit;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-family: "BebasKai";
+}
+
+body {
+    font-family: 'BebasKai', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease-out 0s;
+}
+
+a,
+.button,
+.btn {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+textarea,
+textarea:focus,
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BebasKai', sans-serif;
+    color: #353858;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+ul {margin: 0;
+    padding: 0;
+    list-style: none;}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'BebasKai', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #37393e;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #106ad2;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+/* Pre Loader area css */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: #24262d;
+    overflow: hidden;
+}
+
+.preloader-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.preloader-icon {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    padding: 0px;
+}
+
+.preloader-icon span {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    -webkit-animation: preloader-fx 1.6s linear infinite;
+    animation: preloader-fx 1.6s linear infinite;
+    background-image: -moz-linear-gradient(178deg, rgb(244, 244, 30) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(244, 244, 30) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(244, 244, 30) 0%, rgb(241, 194, 50) 100%);
+}
+
+.preloader-icon span:last-child {
+    animation-delay: -0.8s;
+    -webkit-animation-delay: -0.8s;
+}
+
+@keyframes preloader-fx {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes preloader-fx {
+    0% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/* Header Top Area Css Style */
+.header-top-area {
+    border-bottom: 1px solid #eeeeee;
+}
+
+ul.header-top-left-info-box {
+    margin: 0;
+    padding: 0;
+}
+
+ul.header-top-left-info-box li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+ul.header-top-left-info-box li i {
+    background: #F1C232;
+    color: #fff;
+    width: 30px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    font-size: 18px;
+    margin-right: 13px;
+    position: relative;
+}
+
+ul.header-top-left-info-box li .short-info {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #777777;
+    font-weight: 400;
+}
+
+ul.header-top-left-info-box li .short-info h4 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0;
+}
+
+ul.header-top-left-info-box li i:after {
+    position: absolute;
+    content: '';
+    right: -6px;
+    top: 6px;
+    bottom: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #02a0e7;
+    border-bottom: 10px solid transparent;
+    z-index: -1;
+}
+
+.header-top-right-social-box {
+    display: inline-block;
+    margin: 0;
+}
+
+.header-top-right-social-box li {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 0;
+}
+
+.header-top-right-social-box li a {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header-top-right-social-box li:last-child {
+    margin-right: 0;
+}
+
+/* Header Top Menu Area Css Style */
+.sticky {
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .07);
+    z-index: 99;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    background: #ffffff;
+    transition: .3s;
+}
+
+.header-logo a {
+
+    display: block;
+}
+
+
+/* main menu area css */
+.main-menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu nav > ul > li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.main-menu nav > ul > li:last-child a {
+    padding-right: 0
+}
+
+.main-menu nav > ul > li:first-child a {
+    padding-left: 0
+}
+
+.main-menu nav > ul > li > a {
+    color: #282828;
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 40px 40px;
+    transition: all 0.3s ease 0s;
+    line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.main-menu nav > ul > li:hover > a,
+.main-menu nav > ul > li.active > a {
+    color: #F1C232;
+}
+
+/* sub menu */
+.main-menu nav > ul > li .sub-menu {
+    background: #ffffff none repeat scroll 0 0;
+    border-top: 3px solid #02a0e7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transition: all 0.4s ease-out;
+    visibility: hidden;
+    width: 220px;
+    z-index: 9;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.main-menu nav > ul > li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.main-menu nav > ul > li .sub-menu li {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.main-menu nav > ul > li .sub-menu li a {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 13px 20px;
+    text-transform: capitalize;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-menu nav > ul > li:hover > .sub-menu li > a:hover {
+    color: #fff;
+    background: #02a0e7;
+}
+
+/* sub menu */
+.main-menu nav > ul > li > .sub-menu > li > .sub-menu {
+    background: #ffffff none repeat scroll 0 0;
+    border-top: 3px solid #79b91c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    left: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 120%;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 220px;
+    z-index: 9;
+}
+
+.main-menu nav > ul > li > .sub-menu > li:hover .sub-menu {
+    top: 0 !important;
+    opacity: 1;
+    top: 100%;
+    visibility: visible
+}
+
+.header-top-btn {
+    margin: 24px 0 0 35px;
+    display: inline-block;
+}
+
+
+/* search form area css */
+
+ul.header-search {
+    margin: 37px 0 0 30px;
+    display: inline-block;
+    padding: 0;
+}
+
+ul.header-search li {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul.header-search li a {
+    color: #282828;
+}
+
+ul.header-search li:hover a {
+    color: #02a0e7;
+}
+
+#search-overlay {
+    display: none;
+}
+
+.search-form-area {
+    background: #24262df0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    text-align: center;
+    border: #a0a0a0 solid 1px;
+    margin: 0;
+    z-index: 99999;
+}
+
+.search-form-area:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+.search-form-centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 10px 15px;
+    color: #FFF;
+    border: none;
+    background: transparent;
+}
+
+#search-box {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.search-form input.form-control {
+    box-shadow: none;
+    color: #777777;
+    height: 80px;
+    background: #f8f8f8;
+    border: none;
+    border-radius: 0;
+    padding: 20px 30px;
+}
+
+.search-form button {
+    background: #090909;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 42px;
+    border-width: 0;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 9px 50px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.search-form button:hover {
+    background: #02a0e7;
+}
+
+#close-btn {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+#close-btn:hover {
+    color: #02a0e7;
+    cursor: pointer;
+}
+
+
+/* Laundryka Slider Area Css Style */
+
+.laundryka-single-slider.bg-1 {
+    background-image: url(assets/img/hero/1.webp);
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    height: 970px;
+}
+
+.laundryka-single-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.laundryka-single-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.laundryka-single-slider-content {
+    margin-top: -100px;
+}
+
+.laundryka-single-slider-content h4 {
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.laundryka-single-slider-content h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 73px;
+    margin-bottom: 30px;
+    line-height: 100px;
+}
+
+.slider-area-btn a.btn-typ2:first-child {
+    margin-right: 35px;
+}
+
+.main-slider-offer-box {
+    position: absolute;
+    right: 10%;
+    top: 12%;
+    z-index: 9;
+}
+
+/* Laundryka Slider2 Area Css Style */
+
+.laundryka-single-slider2 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.laundryka-slider2-single-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.laundryka-slider2-single-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ul.laundryka-slider2-top-tag-box {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.laundryka-main-slider2-all .active ul.laundryka-slider2-top-tag-box {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -ms-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    transition-delay: 500ms;
+}
+
+ul.laundryka-slider2-top-tag-box li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 50px 10px 0;
+    position: relative;
+}
+
+ul.laundryka-slider2-top-tag-box li a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+}
+
+ul.laundryka-slider2-top-tag-box li:before {
+    width: 15px;
+    height: 6px;
+    position: absolute;
+    content: "";
+    background: #fff;
+    right: -30px;
+    top: 50%;
+    bottom: 0;
+}
+
+ul.laundryka-slider2-top-tag-box li:nth-child(3)::before {
+    display: none;
+}
+
+ul.laundryka-slider2-top-tag-box li:nth-child(3) {
+    margin-right: 0 !important;
+}
+
+.laundryka-slider2-area-content-box h2 {
+    font-size: 68px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.laundryka-main-slider2-all .active .laundryka-slider2-area-content-box h2 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 1000ms;
+    -moz-transition-delay: 1000ms;
+    -ms-transition-delay: 1000ms;
+    -o-transition-delay: 1000ms;
+    transition-delay: 1000ms;
+
+}
+
+.slider2-area-btn-box {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.laundryka-main-slider2-all .active .slider2-area-btn-box {
+
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: 1500ms;
+    -moz-transition-delay: 1500ms;
+    -ms-transition-delay: 1500ms;
+    -o-transition-delay: 1500ms;
+    transition-delay: 1500ms;
+}
+
+.laundryka-single-slider2-style-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.laundryka-single-slider2-style-img img {
+    height: 100%;
+}
+
+.laundryka-main-slider2-all .active .laundryka-single-slider2-style-img {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 2000ms;
+    -moz-transition-delay: 2000ms;
+    -ms-transition-delay: 2000ms;
+    -o-transition-delay: 2000ms;
+    transition-delay: 2000ms;
+}
+
+.laundryka-main-slider2-all.owl-theme .owl-dots .owl-dot span {
+    background: #6ad0f6 none repeat scroll 0 0;
+    border-radius: 30%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 0 4px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    opacity: .5;
+}
+
+.laundryka-main-slider2-all.owl-theme .owl-dots .owl-dot.active span {
+    background: #6ad0f6;
+    border: medium none;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.laundryka-main-slider2-all.owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    left: 10%;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.laundryka-main-slider2-all.owl-theme .owl-dots .owl-dot {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+
+/* Laundryka Workes Steap Area Css Style */
+.single-works-steap-box {
+    cursor: pointer;
+}
+
+.works-steap-icon-box {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    border: 2px solid #02a0e7;
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+    transition: all .3s;
+    transform: scale(.9);
+}
+
+.works-steap-icon-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.steap-icon-tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #02a0e7;
+    line-height: 43px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.works-steap-icon-border span {
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #6ad0f6;
+    line-height: 43px;
+    font-size: 30px;
+    font-weight: 500;
+    border: 2px solid #fff;
+}
+
+.works-steap-icon-box i {
+    font-size: 70px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+
+.single-works-steap-box h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.single-works-steap-box:hover h3 {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.single-works-steap-box:hover .works-steap-icon-box {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    transform: scale(1);
+}
+
+.single-works-steap-box:hover .works-steap-icon-box i {
+    color: #fff;
+}
+
+.single-works-steap-box:hover .works-steap-icon-border {
+    -webkit-animation: rotate-2 30s linear infinite;
+    animation: rotate-2 30s linear infinite;
+}
+
+.laundryka-workes-steap-area .col-xl-3:nth-child(2n+1) .single-works-steap-box .works-steap-icon-box:after {
+    content: url(assets/img/works/1.png);
+    height: 100px;
+    position: absolute;
+    right: -90%;
+    top: 0;
+    width: 90%;
+}
+
+.single-works-steap-box .works-steap-icon-box:after {
+    content: url(assets/img/works/2.png);
+    height: 100px;
+    position: absolute;
+    right: -90%;
+    top: 0;
+    width: 90%;
+}
+
+.laundryka-workes-steap-area .col-xl-3:nth-child(4) .single-works-steap-box .works-steap-icon-box:after {
+    display: none;
+}
+
+/* Laundryka Workes Steap Style2 Area Css Style */
+
+.single-works-steap-style2-box {
+    position: relative;
+    border: 4px solid #eeeeee;
+    padding: 70px 0;
+    background: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.single-works-steap-style2-box:hover {
+    margin-top: -30px;
+    box-shadow: 0px 0px 30px 0px rgba(47, 50, 212, 0.15);
+}
+
+.steap-style2-icon-tip {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    color: #fff;
+    background: rgb(70 70 70 / .40);
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom-left-radius: 40px;
+    z-index: 1;
+    text-transform: capitalize;
+    transition: all .1s;
+}
+
+.steap-style2-icon-tip:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(70 70 70 / .30);
+    width: 60px;
+    height: 60px;
+    border-bottom-left-radius: 52px;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.steap-style2-icon-tip:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(70 70 70 / .30);
+    width: 70px;
+    height: 70px;
+    border-bottom-left-radius: 62px;
+    z-index: -1;
+    transition: all .6s;
+}
+
+.works-steap-style-shap .lws2 {
+    position: absolute;
+    left: -4px;
+    bottom: -4px;
+    background: rgb(70 70 70 / .70);
+    width: 30px;
+    height: 30px;
+}
+
+.works-steap-style-shap .lws3 {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: rgb(70 70 70 / .50);
+    width: 20px;
+    height: 20px;
+    transition: all .3s;
+}
+
+.works-steap-style2-icon-content-box i {
+    font-size: 70px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+
+.works-steap-style2-icon-content-box h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.single-works-steap-style2-box:hover .works-steap-style2-icon-content-box i {
+    color: #2f32d4;
+}
+
+.single-works-steap-style2-box:hover .works-steap-style-shap .lws2 {
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .70) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .70) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .70) 0%, rgb(113 66 247 / .30) 100%);
+}
+
+.single-works-steap-style2-box:hover .works-steap-style-shap .lws3 {
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .50) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .50) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .50) 0%, rgb(113 66 247 / .30) 100%);
+    left: 20px;
+    bottom: 20px;
+}
+
+
+.single-works-steap-style2-box:hover .steap-style2-icon-tip {
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .40) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .40) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .40) 0%, rgb(113 66 247 / .30) 100%);
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+}
+
+.single-works-steap-style2-box:hover .steap-style2-icon-tip:before {
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    width: 70px;
+    height: 70px;
+    border-bottom-left-radius: 58px;
+}
+
+.single-works-steap-style2-box:hover .steap-style2-icon-tip:after {
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .30) 0%, rgb(113 66 247 / .30) 100%);
+    width: 80px;
+    height: 80px;
+    border-bottom-left-radius: 65px;
+}
+
+/* Laundryka About area css */
+
+.laundryka-about-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.laundryka-about-bg-img {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    bottom: 0;
+    height: 100%;
+    width: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.laundryka-about-bg-img:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 435px;
+    height: 435px;
+    bottom: 0;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    opacity: 0.302;
+    border-top-left-radius: 100%;
+}
+
+.laundryka-about-bg-img img {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.laundryka-about-content {
+    padding: 80px 0;
+}
+
+.laundryka-about-content h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+}
+
+.about-chariti-list-area {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.laundryka-about-content h2 span {
+    color: #F1C232;
+}
+
+.laundryka-about-content h2:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    border-left: 6px solid #7142f7;
+    border-image: linear-gradient(to bottom,
+    #F1C232,
+    #F1C232) 1 100%;
+}
+
+ul.about-chariti-list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+ul.about-chariti-list:first-child {
+    margin-right: 50px;
+}
+
+ul.about-chariti-list li {
+    font-size: 26px;
+    color: #37393e;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+ul.about-chariti-list li a {
+    font-size: 24px;
+    color: #37393e;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.laundryka-about-content p {
+    font-size: 24px;
+}
+ul.about-chariti-list li i {
+    color: #F1C232;;
+    margin-right: 10px;
+}
+
+.videos-icon-text {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(15%, 15%);
+    text-align: center;
+}
+
+.videos-icon-text i {
+    background-image: -moz-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, hsla(24, 92%, 61%, .8) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, hsla(24, 92%, 61%, .8) 100%);
+    background-image: -ms-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, hsla(24, 92%, 61%, .8) 100%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 100px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    animation: heartbeat 1s infinite alternate;
+}
+
+
+
+
+.videos-icon-text a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-animation: btnIconRipple 3s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 3s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+.videos-icon-text a::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+.laundryka-about-area .back-img {
+    width: 540px;
+    height: 600px;
+    background-image: -moz-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, rgba(255, 202, 55, 0.8) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, rgba(255, 202, 55, 0.8) 100%);
+    background-image: -ms-linear-gradient(178deg, rgba(241, 194, 50, .8) 0%, rgba(255, 202, 55, 0.8) 100%);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-10deg);
+    bottom: 0;
+    top: 10%;
+}
+
+
+.about-style-shape .las-1 {
+    position: absolute;
+    right: 25%;
+    opacity: 0.4;
+    top: 8%;
+}
+
+.about-style-shape .las-2 {
+    position: absolute;
+    right: 3%;
+    opacity: .5;
+    bottom: 7%;
+    width: 70px;
+}
+
+.about-style-shape .las-3 {
+    position: absolute;
+    right: 0;
+    opacity: .75;
+    bottom: 0px;
+    width: 70px;
+    height: auto;
+}
+
+.about-brief-content-box h2.about-brief-title2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    background-image: -moz-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    opacity: 0.851;
+}
+.about-brief-content-box h2.about-brief-title {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(255, 163, 24) 100%);
+    opacity: 0.851;
+}
+
+
+.about-brief-content-box h2.about-brief-title2:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 44px solid transparent;
+    border-right: 30px solid #F1C232;
+    border-bottom: 44px solid transparent;
+}
+
+.about-brief-content-box h2.about-brief-title:after {
+    position: absolute;
+    content: '';
+    left: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 44px solid transparent;
+    border-left: 30px solid #F1C232;
+    border-bottom: 44px solid transparent;
+}
+
+.about-brief-content-img-box2,
+.about-brief-content-img-box {
+    position: relative;
+}
+
+.about-brief-content-img-box:after {
+    position: absolute;
+    content: '';
+    right: -10px;
+    top: -10px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+}
+
+.about-brief-content-img-box2:after {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+}
+
+/* Laundryka Services Area css */
+
+.laundryka-services-area {
+    position: relative;
+}
+
+.services-bg-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.services-style-bg-img .lss-1 {
+    position: absolute;
+    left: 2%;
+    opacity: 0.4;
+    top: 30%;
+}
+
+.services-style-bg-img .lss-2 {
+    position: absolute;
+    left: 12%;
+    opacity: 0.4;
+    bottom: 15%;
+}
+
+.services-icon-box {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #eeeeee;
+    padding: 25px;
+    background: #fff;
+    width: 100%;
+}
+
+.services-icon-box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.single-services-box:hover :after {
+    top: -8px;
+    left: -8px;
+}
+
+.services-icon-box:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.single-services-box:hover :before {
+    bottom: -8px;
+    right: -8px;
+}
+
+.single-services-box h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.single-services-box {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.single-services-box h3 span {
+    color: #F1C232;
+}
+
+/* Laundryka App cta Area css */
+
+.laundryka-app-cta-area {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    background-image: url(assets/img/cta/2.jpg);
+    background-repeat: no-repeat;
+    padding: 200px 0 100px;
+}
+
+.laundryka-app-cta-content-box h2 {
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 30px 40px;
+    background-image: -moz-linear-gradient(178deg, rgb(47 50 212 / .80) 0%, rgb(113 66 247 / .80) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47 50 212 / .80) 0%, rgb(113 66 247 / .80) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47 50 212 / .80) 0%, rgb(113 66 247 / .80) 100%);
+}
+
+.laundryka-app-cta-content-box h3 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.laundryka-app-cta-btn-box a {
+    margin: 0 15px;
+}
+
+
+
+
+
+
+
+/* Laundryka Services2 Area css */
+.single-services2-box {
+    cursor: pointer;
+}
+
+.services2-icon-box {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #eeeeee;
+    padding: 25px;
+    background: #fff;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s;
+}
+
+.single-services2-box:hover .services2-icon-box {
+    border: 2px dashed #02a0e7;
+}
+
+.single-services2-box h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.services2-icon-box span {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100px;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    color: #fff;
+    transform: scale(0);
+    transition: all .3s;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.single-services2-box:hover span {
+    transform: scale(1);
+}
+
+/* Laundryka Testimonial Area css */
+
+
+.laundryka-testimonial-area {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    background-image: url(assets/img/testimonial/testimonial-bg.png);
+    background-color: #1a2b3c;
+    transform: skewY(-2deg);
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    overflow: hidden;
+}
+
+.testimonial-wraper {
+    transform: skewY(2deg);
+}
+
+.single-testimonial p {
+    font-size: 26px;
+    color: #fff;
+    font-style: italic;
+    line-height: 2;
+    position: relative;
+    padding: 0 45px;
+}
+
+.single-testimonial p:before {
+    content: url(assets/img/testimonial/q.png);
+    left: 0px;
+    position: absolute;
+    top: 0;
+}
+
+.single-testimonial .title-desig {
+    margin: 40px 0;
+}
+
+.single-testimonial .title-desig h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+
+.single-testimonial .title-desig h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.single-testimonial .title-desig h4 span {
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.single-testimonial .title-desig h4 span:after {
+    position: absolute;
+    left: -3px;
+    content: '-';
+    font-size: 18px;
+    top: 1px;
+}
+
+.testimonial-img {
+    margin: 0 0 30px;
+}
+
+.single-testimonial img {
+    width: 110px !important;
+    height: 110px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.testimonial-wraper.owl-theme .owl-dots .owl-dot span {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 30%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 0 4px;
+    border-radius: 50%;
+    border: 4px solid #6ad0f6;
+    opacity: .5;
+}
+
+.testimonial-wraper.owl-theme .owl-dots .owl-dot.active span {
+    background: #fff;
+    border: medium none;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #6ad0f6;
+}
+
+.testimonial-wraper.owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -45px;
+    margin-top: 0;
+}
+
+.laundryka-testimonial-special-img .lts-1 {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(47, 48, 52, 0.45);
+    animation: heartbeat 1s infinite alternate;
+}
+
+.laundryka-testimonial-special-img .lts-2 {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(47, 48, 52, 0.45);
+    animation: heartbeat 1s infinite alternate;
+}
+
+.laundryka-testimonial-special-img .lts-3 {
+    position: absolute;
+    left: 2%;
+    bottom: 10%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(47, 48, 52, 0.45);
+    animation: heartbeat 1s infinite alternate;
+}
+
+.laundryka-testimonial-special-img .lts-4 {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(47, 48, 52, 0.45);
+    animation: heartbeat 1s infinite alternate;
+}
+
+.laundryka-testimonial-special-img .lts-5 {
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(47, 48, 52, 0.45);
+    animation: heartbeat 1s infinite alternate;
+}
+
+.laundryka-testimonial-special-img .lts-6 {
+    position: absolute;
+    right: 60%;
+    top: 10%;
+    opacity: .3;
+}
+
+.laundryka-testimonial-special-img .lts-7 {
+    position: absolute;
+    right: -5%;
+    bottom: -10%;
+    opacity: .3;
+}
+
+
+/* Laundryka Pricing Table Area css */
+
+
+.laundryka-pricing-table-area {
+    overflow: hidden;
+}
+
+.pricing-area {
+    padding-top: 100px;
+}
+
+.pricing-area.pricing-area-3 {
+    margin-top: 0px;
+}
+
+ul.price-nav {
+    display: inline-block;
+    border: 2px solid #e7e7e7;
+    border-radius: 30px;
+}
+
+ul.price-nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+.price-header h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #30323d;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul.price-nav li button {
+    padding: 20px 40px;
+    line-height: 1;
+    color: #878991;
+    border-radius: 30px 0px 0px 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+ul.price-nav li button.active {
+    border-radius: 30px 0px 0px 30px;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    color: #fff !important;
+    -webkit-border-radius: 30px 0px 0px 30px;
+    -moz-border-radius: 30px 0px 0px 30px;
+    -ms-border-radius: 30px 0px 0px 30px;
+    -o-border-radius: 30px 0px 0px 30px;
+}
+
+ul.price-nav li:nth-child(2) button {
+    border-radius: 0px 30px 30px 0px;
+    -webkit-border-radius: 0px 30px 30px 0px;
+    -moz-border-radius: 0px 30px 30px 0px;
+    -ms-border-radius: 0px 30px 30px 0px;
+    -o-border-radius: 0px 30px 30px 0px;
+}
+
+.pricing-area {
+    margin-bottom: -240px;
+}
+
+.single-price-area {
+    background: transparent;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.laundryka-pricing-table-area .col-xl-4:nth-child(odd) .single-price-area {
+    margin-top: 40px;
+}
+
+.single-price-area .badge-popular {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 112px;
+    width: 130px;
+    text-align: center;
+    z-index: 1;
+    right: 0;
+    border-top-right-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.single-price-area .popular {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+    padding: 10px 0px 10px 30px;
+    width: 190px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(44deg);
+}
+
+.single-price-area.active .badge-popular {
+    visibility: visible;
+    opacity: 1;
+}
+
+.single-price-area:hover {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.single-price-area:hover .price-header h2 {
+    color: #7142f7;
+}
+
+.single-price-area.active .price-header h4,
+.single-price-area.active .price-header h2 {
+    color: #fff;
+}
+
+.single-price-area.active {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.price-header {
+    position: relative;
+    padding: 25px;
+    margin-bottom: 35px;
+    background: #d2f3ff;
+}
+
+.single-price-area.active .price-header {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.price-header:before {
+    content: "";
+    background-image: linear-gradient(to right bottom, #2f32d4 0%, #7142f7 50%, transparent 50%);
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 102%;
+    left: 0px;
+}
+
+.price-header:after {
+    content: "";
+    background-image: linear-gradient(to right bottom, #d2f3ff 0%, #d2f3ff 50%, transparent 50%);
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 100%;
+    left: 0px;
+}
+
+.single-price-area.active .price-header:before,
+.single-price-area.active .price-header:after {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.price-header > span {
+    font-size: 18px;
+    color: #30323d;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.price-header h2 {
+    font-size: 60px;
+    color: #02a0e7;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s;
+}
+
+.price-header h2 > span.sep {
+    font-size: 18px;
+    color: #30323d;
+}
+
+.single-price-area.active .price-header h2 > span {
+    color: #fff;
+}
+
+.price-header h2 > span {
+    font-size: 18px;
+    color: #30323d;
+}
+
+.price-item-list ul li {
+    font-size: 17px;
+    margin-bottom: 17px;
+
+}
+
+.price-item-list ul li:last-child {
+    margin-bottom: 0px;
+}
+
+/* Laundryka Counter Area css */
+
+.laundryka-counter-area {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    height: 1000px;
+    background-image: url(assets/img/counter/1.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.laundryka-counter-style-shape img.lcs-1 {
+    position: absolute;
+    right: -5%;
+    top: 12%;
+}
+
+.laundryka-counter-style-shape img.lcs-2 {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+.single-counter-box {
+    text-align: center;
+    padding: 50px 0;
+    border: 2px dashed #fff;
+    background: rgba(255, 255, 255, .10);
+    width: 100%;
+}
+
+.single-counter-box h3.counter {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.single-counter-box span {
+    background: #fff;
+    display: inline-block;
+    width: 30px;
+    height: 6px;
+    margin: 20px 0;
+}
+
+.single-counter-box h4 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.laundryka-counter-info-box {
+    margin: 210px 0 0 15px;
+}
+
+.laundryka-counter-info-box h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.laundryka-counter-info-box h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+}
+
+.laundryka-counter-info-box h4 a {
+    color: #02a0e7;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Laundryka Team Area css */
+
+.single-team-wraper {
+    cursor: pointer;
+    padding: 0 15px;
+    max-height: 500px;
+    height: 500px;
+}
+
+.single-team-wraper .team-img-title {
+    position: relative;
+}
+
+.team-img-hvr-plus {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.team-img-hvr-plus a.popup-team {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgba(47, 50, 212, .7) 0%, rgba(113, 66, 247, .7) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.single-team-wraper:hover .team-img-hvr-plus {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%);
+}
+
+.single-team-wraper .team-img-title img {
+    width: 100%;
+}
+
+.team-img-title h3.team-title {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -50px;
+    background: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px 0px rgba(47, 48, 52, 0.14);
+    transition: all .3s;
+}
+
+.single-team-wraper:hover h3.team-title {
+    color: #fff;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    bottom: -30px;
+}
+
+.team-all-member-box .owl-nav div {
+    left: -100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    line-height: 60px;
+    font-size: 50px !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    width: 70px;
+    height: 70px;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+}
+
+.team-all-member-box .owl-nav div.owl-next {
+    left: auto;
+    right: -100px;
+}
+
+/* Laundryka CTA Area css */
+
+.laundryka-cta-area {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+    height: 100%;
+    background-image: url(assets/img/cta/1.jpg);
+    background-color: #1a2b3c;
+    background-repeat: no-repeat;
+}
+
+.laundryka-cta-area:before {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgba(47, 50, 212, .8) 0%, rgba(113, 66, 247, .8) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-title h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.cta-form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 0;
+    font-size: 18px;
+    color: #30323d;
+}
+
+.cta-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 60px;
+}
+/* Laundryka Blog Area css */
+
+.single-blog-box:hover a.post-title {
+    color: #F1C232;
+}
+
+.blog-img-date {
+    position: relative;
+}
+
+.blog-img-date .blog-date {
+    font-size: 14px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-transform: capitalize;
+    padding: 10px;
+    line-height: 1.2;
+}
+.laundryka-blog-details-wraper img,
+.single-blog-box img {
+    width: 100%;
+}
+h4 .post-title {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.blog-content {
+    padding: 15px;
+    text-align: justify;
+}
+
+.blog-img-slider.owl-theme .owl-nav {
+    margin-top: 0 !important;
+}
+
+.blog-img-slider .owl-nav div {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    color: #2f3034 !important;
+    width: 50px;
+    height: 50px;
+    margin: 0 !important;
+}
+
+.blog-img-slider .owl-nav div:hover {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%) !important;
+    color: #fff !important;
+}
+
+.blog-img-slider .owl-nav div.owl-next {
+    left: auto;
+    right: 0;
+}
+
+
+.blog-video-img:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    opacity: .7;
+}
+
+.blog-video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.blog-video-icon a {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    color: #2f32d4;
+    background: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    animation: heartbeat 1s infinite alternate;
+}
+
+.blog-video-icon a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+    border-radius: inherit;
+    border: 1px solid #fff;
+    -webkit-animation: btnIconRipple 3s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 3s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+.blog-video-icon a::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    bottom: -30px;
+    right: -30px;
+    border-radius: inherit;
+    border: 1px solid #fff;
+    -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+    animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+.blog-details-content h6,
+.blog-details-content h5,
+.blog-details-content h5,
+.blog-details-content h4,
+.blog-details-content h3,
+.blog-details-content h2,
+.blog-details-content h1 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Blog Quote Area Css Style */
+
+blockquote,
+blockquote.wp-block-quote {
+    padding: 20px 35px !important;
+    box-shadow: 0px 0px 30px 0px rgba(26, 43, 60, 0.15);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+    z-index: 1;
+    background-image: -moz-linear-gradient(90deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+blockquote:before,
+blockquote.wp-block-quote:before {
+    content: "\f10d";
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+    font-family: "FontAwesome";
+    color: #fff;
+    font-size: 50px;
+    line-height: 1;
+    opacity: .5;
+    z-index: -1;
+}
+
+blockquote p,
+blockquote.wp-block-quote p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+blockquote cite,
+blockquote.wp-block-quote cite {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-left: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    float: right;
+    color: #fff;
+}
+
+blockquote cite:before,
+blockquote.wp-block-quote cite:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+/* Post Date Admin Comments Number Area Css Style */
+
+
+.blog-post-admin-date-comment-tag {
+    padding: 30px 35px;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.blog-post-admin-date-comment-tag .post-info {
+    margin: 0 15px 0 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.blog-post-admin-date-comment-tag .post-info a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.blog-post-admin-date-comment-tag .post-info span i {
+    margin-right: 6px;
+    color: #fff;
+}
+
+/* Post Tags Area Css Style */
+
+.blog-post-tag span {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 17px;
+    color: #1a2b3c;
+    text-transform: capitalize;
+}
+
+.blog-post-tag {
+    background: #fff;
+    padding: 0;
+    padding-top: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 30px;
+}
+
+.blog-post-tag > a {
+    color: #1a2b3c;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    padding: 10px 24px;
+    margin-right: 5px;
+    transition: .3s;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.blog-post-tag > a:hover {
+    color: #fff;
+    background: #02a0e7;
+    border-color: #02a0e7;
+}
+
+/* Blog Comments Area Css Style */
+
+.post-heading {
+    margin-bottom: 30px;
+}
+
+.post-heading h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #1a2b3c;
+    line-height: 1;
+}
+
+.latest-comments > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.latest-comments ul {
+    list-style: none;
+}
+
+.comments-box {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e7eaf0;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.comments-box:hover {
+    border-color: #02a0e7;
+}
+
+.comments-avatar {
+    float: left;
+    width: 100px;
+}
+
+.comments-avatar img {
+    border: 3px solid #02a0e7;
+    border-radius: 50%;
+}
+
+.comments-text {
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.avatar-name-date {
+    display: inline-block;
+}
+
+.avatar-name-date > h5 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #1a2b3c;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.avatar-name-date span {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0 12px;
+    display: block;
+    color: #1a2b3c;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.comments-text > p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.comments-text > a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #1a2b3c;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    margin-top: -6px;
+}
+
+.comments-reply {
+    padding-left: 130px;
+}
+
+/* Blog Comments Form Area Css Style */
+
+.post-comments-form-area {
+    margin: 40px 0 40px 0;
+}
+
+.post-comments-form-area .post-comments-form {}
+
+.post-reviews-form input.form-control,
+.post-comments-form input.form-control {
+    box-shadow: none;
+    color: #777777;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #f4f7fc;
+    border: 1px solid #e7eaf0;
+    padding: 5px 20px;
+    transition: all .3s;
+    border-radius: 0px;
+}
+
+.post-reviews-form textarea.form-control,
+.post-comments-form textarea.form-control {
+    height: 133px;
+    box-shadow: none;
+    color: #777777;
+    margin-bottom: 30px;
+    background: #f4f7fc;
+    border: 1px solid #e7eaf0;
+    padding: 15px 20px;
+    transition: all .3s;
+    border-radius: 0px;
+}
+
+.post-comments-form textarea.form-control:focus,
+.post-comments-form input.form-control:focus {
+    box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+    outline: none;
+    border: 1px solid #02a0e7;
+}
+
+/* Laundryka Footer Area css */
+
+.laundryka-footer-area {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+    background-image: url(assets/img/footer/1.jpg);
+    background-color: #1a2b3c;
+    background-repeat: no-repeat;
+}
+
+.laundryka-footer-area:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(241, 194, 50) 0%, rgb(241, 194, 50) 100%);
+    opacity: .8;
+}
+
+.laundryka-footer-style-shape img.lfs-1 {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    opacity: .5;
+}
+
+.laundryka-footer-style-shape img.lfs-2 {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.laundryka-footer-style-shape img.lfs-3 {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+}
+
+
+/* Footer Copyright Area css */
+
+.footer-copyright p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.footer-copyright-menu-area {
+    background: #000;
+}
+
+.footer-copyright {
+
+}
+
+.footer-copyright p a {
+    color: #F1C232;
+    /* font-weight: 700; */
+}
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin: 0 !important;
+    transition: all .3s;
+}
+
+.footer-menu li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 0 20px 30px;
+}
+
+.footer-menu li:hover a {
+    color: #F1C232;
+}
+
+/* Laundryka breadcrumb area css */
+
+
+.laundryka-breadcrumb-area {
+    position: relative;
+    overflow: hidden;
+    background-image: -moz-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(255, 163, 24) 0%, rgb(241, 194, 50) 100%);
+    opacity: 0.851;
+}
+
+.breadcrumb-style-shape img.lbs-1 {
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    opacity: .5;
+}
+
+.breadcrumb-style-shape img.lbs-2 {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.breadcrumb-style-shape img.lbs-3 {
+    position: absolute;
+    right: 18%;
+    top: 16%;
+}
+
+.laundryka-breadcrumb-area h2 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.laundryka-breadcrumb-area .breadcrumb {
+    background: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb .breadcrumb-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.laundryka-breadcrumb-area .breadcrumb .breadcrumb-item,
+.laundryka-breadcrumb-area .breadcrumb-item.active a,
+.laundryka-breadcrumb-area .breadcrumb .breadcrumb-item.active {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.laundryka-breadcrumb-area .breadcrumb .breadcrumb-item a {
+    color: #02a0e7;
+    text-transform: capitalize;
+}
+
+.laundryka-breadcrumb-area .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+}
+
+/* Laundryka Shop Area css */
+
+.laundryka-short-by {
+    border: 1px solid #eee;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.laundryka-shop-result-show {
+    overflow: hidden;
+}
+
+.laundryka-sho-result {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.laundryka-sho-result p {
+    margin: 0;
+}
+
+.single-product-top-area {
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-str {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 15px 15px 0 15px;
+}
+
+.product-rating {
+    margin: 8px 0;
+}
+
+.product-sel-tag span {
+    color: #414141;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 11px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #414141;
+    transition: all .3s;
+}
+
+.laundryka-single-product-box:hover .product-sel-tag span {
+    color: #fff;
+    border-color: #fff;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.laundryka-single-product-bottom-box {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.14);
+}
+
+ul.product-tags {
+    margin: 0;
+    padding: 0;
+}
+
+ul.product-tags li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+ul.product-tags li a {
+    font-size: 15px;
+    color: #414141;
+    font-weight: 500;
+    display: block;
+}
+
+
+.product-content h4 a {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.laundryka-single-product-box:hover .product-content h4 a {
+    color: #02a0e7;
+}
+
+.product-content h4 {
+    margin: 15px 0 15px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.product-price del {
+    color: #414141ab;
+    margin-left: 15px;
+}
+
+ul.product-action {
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+ul.product-action li a {
+    color: #414141;
+    display: block;
+    border: 1px solid #414141;
+    font-size: 18px;
+    height: 42px;
+    line-height: 40px;
+    width: 42px;
+    text-align: center;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+ul.product-action li {
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+ul.product-action li:hover a {
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    color: #fff;
+    border-color: #fff;
+}
+
+.product-big-img-thumb img {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+
+.single-product-brief h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.product-big-img-thumb button.slick-next.slick-arrow {
+    display: none !important;
+}
+
+/* Shop Quantity Style Css */
+
+.laundryka-quantity {
+    position: relative;
+    width: 100px;
+}
+
+.laundryka-quantity button.down.qtybtn {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 40px;
+    height: 25px;
+    line-height: 1;
+    z-index: 1;
+    background: transparent;
+    border: 1px solid #eee;
+    transition: all .3s;
+}
+
+.laundryka-quantity button.up.qtybtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 26px;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid #eee;
+    transition: all .3s;
+}
+
+.laundryka-quantity button.up.qtybtn:hover,
+.laundryka-quantity button.down.qtybtn:hover {
+    color: #fff;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+.laundryka-quantity input.form-control {
+    width: 100px;
+    position: relative;
+    height: 50px;
+    border: 1px solid #eee;
+    padding: 0 40px 0 10px;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+/* Product Meta area style css */
+
+.single-product-brief .product_meta {
+    margin: 20px 0 0;
+}
+
+.single-product-brief .product_meta li {
+    font-weight: 300;
+    color: #677294;
+    margin-bottom: 10px;
+}
+
+.single-product-brief .product_meta li span {
+    font-weight: 700;
+    color: #282835;
+    padding-right: 8px;
+}
+
+.single-product-brief .product_meta li a {
+    color: #677294;
+}
+
+/* Product Rivew Area Style Css */
+
+.single-product-rivew-tab .nav-tabs li {margin-bottom: -1px;}
+    .single-product-rivew-tab .nav-tabs li button {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #222;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.single-product-rivew-tab .tab-content {
+    padding: 25px;
+    border: 1px solid #dee2e6;
+    margin-top: -1px;
+}
+
+.reviews-avatar {
+    float: left;
+    width: 103px;
+}
+
+.reviews-avatar img {
+    width: 100px;
+    height: auto;
+}
+
+.reviews-text {
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.reviewer-name-date {
+    overflow: hidden;
+}
+
+.reviewer-name-date > h5 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.reviewer-name-date h5 span {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.reviews-text > p {
+    margin-bottom: 25px;
+}
+
+/* Contact Form Area Css Style */
+.laundryka-contact-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.laundryka-contact-style-shape img.lcs-1 {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    opacity: .40;
+}
+
+.laundryka-contact-style-shape img.lcs-2 {
+    position: absolute;
+    left: 10%;
+    bottom: -3%;
+    opacity: .10;
+}
+
+.laundryka-contact-style-shape img.lcs-3 {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    opacity: .5;
+}
+
+.laundryka-contact-form-area {
+    padding: 70px 50px;
+    background: #f7faff;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    position: relative;
+}
+
+.laundryka-contact-form-area:after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    bottom: 0;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    left: -10px;
+    top: 0;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.laundryka-contact-form input.form-control {
+    box-shadow: none;
+    color: #777777;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    padding: 5px 20px;
+    transition: all .3s;
+}
+
+.laundryka-contact-form textarea.form-control:focus,
+.laundryka-contact-form input.form-control:focus {
+    box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+    outline: none;
+    border: 1px solid #02a0e7;
+}
+
+.laundryka-contact-form textarea.form-control {
+    height: 133px;
+    box-shadow: none;
+    color: #777777;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    padding: 15px 20px;
+    transition: all .3s;
+}
+
+p.form-message {
+    font-size: 15px;
+}
+
+/* Google Map Area Css Style */
+#laundryka-map {
+    height: 525px;
+}
+
+.contact-map-area {
+    position: relative;
+}
+
+.contact-map-area:after {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    content: '';
+    background: #f7faff;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3d35db;
+    z-index: -1;
+}
+
+/* Contact Info  Area Css Style */
+
+.contact-info-box {
+    text-align: center;
+    border: 1px solid #e7eaf0;
+    background: #f7faff;
+    padding: 30px 0;
+    cursor: pointer;
+    transition: all .3s;
+    margin-left: 25px;
+    position: relative;
+}
+
+.contact-info-box:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    transform: rotate(20deg);
+    z-index: -1;
+}
+
+.contact-info-box:hover {
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+}
+
+.contact-info-icon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+    margin-bottom: 20px;
+    background-image: -moz-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -webkit-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+    background-image: -ms-linear-gradient(178deg, rgb(47, 50, 212) 0%, rgb(113, 66, 247) 100%);
+}
+
+ul.contact-info {
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.contact-info li,
+ul.contact-info li a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #656970;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  Laundryka Error Area Css Style */
+
+.laundryka-content-box {}
+
+.laundryka-content-box h2 {
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1;
+    color: #02a0e7;
+}
+
+.laundryka-content-box h3 {
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    margin: 10px 0 60px;
+}
+
+.header-logo a img {
+    max-width: 50%;
+}
+
+.header-top-area .container .row div {
+    margin: auto;
+}
+
+.services-icon-box img.service_img {
+    width: 362px;
+    height: 241px;
+}
+
+.text {
+    margin-bottom: 0px;
+}
+
+.more {
+    display: none;
+}
+
+.btn-more {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.about-brief-content-box p {
+    font-size: 24px;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+.slick-next:before {
+    background: url("./assets/img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slick-prev:before {
+    background: url("./assets/img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.whatsapp {
+    max-width: 80px;
+    position: fixed;
+    z-index: 9999;
+    right: 15px;
+    bottom: 30px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.btn-read {
+    text-align: end;
+}
+.header-top-area .container .row div.header-left {
+    margin-right: 0;
+    text-align: end;
+    margin-left: 45%
+}
+
+@media (max-width: 768px) {
+    .header-logo a img {
+        max-width: 20%
+    }
+    .header-top-area .container .row div.header-left {
+        text-align:left;
+        margin-left: 0;
+    }
+    .pb-35 {
+        padding-bottom: 0px;
+    }
+    .material-scrolltop {
+        right: 85px;
+    }
+    .whatsapp {
+        right: 65px;
+    }
+    .laundryka-breadcrumb-area h2 {
+        font-size: 60px;
+    }
+}
