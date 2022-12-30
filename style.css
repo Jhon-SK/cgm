@@ -3339,13 +3339,13 @@ ul.contact-info li a {
     bottom: 0px;
 }
 
-.slick-next:before {
+.slick-next {
     background: url("./assets/img/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.slick-prev:before {
+.slick-prev {
     background: url("./assets/img/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -3528,5 +3528,25 @@ li a i:hover {
     }
     ul.header-top-left-info-box li .short-info h4 {
         font-size: 18px;
+    }.laundryka-about-content p {
+        font-size: 18px;
+    }
+    ul.about-chariti-list li {
+        font-size: 20px;
+    }
+    .about-brief-content-box p {
+        font-size: 18px;
+    }
+    .single-services-box h3 {
+        font-size: 20px;
+    }
+    .single-services-box span {
+        font-size: 16px;
+    }
+    .section-title h3 {
+        font-size: 35px;
+    }
+    .single-services-box p{
+        font-size: 16px;
     }
 }
