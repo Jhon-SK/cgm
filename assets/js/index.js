@@ -55,9 +55,6 @@ $(document).ready(function(){
         // instead of a settings object
       ]
       });
-      $('.btn-submit').on('click',function(){
-
-      })
       $('#numero_documento').maxlength({max: 8, showFeedback: false});
       $('#nombre').maxlength({max: 50, showFeedback: false});
       $('#telefono').maxlength({max: 9, showFeedback: false});
@@ -127,3 +124,57 @@ $(document).ready(function(){
          return false;
  
  }
+ function closePopup(){
+  $('.popup').fadeOut();
+ }
+ $('.btn-submit').on('click',function(){
+ var response = grecaptcha.getResponse();
+ if (response.length == 0){
+  alert("Debe rellenar el captcha");
+ } else {
+  $('.btn-submit').attr("disabled", true);
+  let NAME = $('#nombre').val();
+  let LASTNAME = $('#lastname').val();
+  let EMAIL = $('#email').val();
+  let PHONE = $('#telefono').val();
+  let MESSAGE = $('#lugar').val();
+  let data = {
+    name : NAME,
+    lastname : LASTNAME,
+    email : EMAIL,
+    phone : PHONE,
+    message : MESSAGE,
+   }
+   let datajson = JSON.stringify(data)
+   $('input').attr("disabled", true);
+  $.ajax({
+    url : './enviar.php',
+    method : 'POST',
+    contentType: "application/json",
+     data: datajson,
+     success: function (res) {
+      $('.text-danger').text('');
+      if (res.estado == 0){
+       for (const key in res.mensaje[0]) {
+        $('#'+key).text(res.mensaje[0][key])
+       }
+      } else {
+      $('#nombre').val('');
+      $('#lastname').val('');
+      $('#email').val('');
+      $('#telefono').val('');
+      $('#lugar').val('');
+      $('.popup').fadeIn('');
+      grecaptcha.reset();
+      }
+      $('.btn-submit').attr("disabled", false);
+      $('input').attr("disabled", false);
+    },
+    error: function (err) {
+    console.log(err)
+    $('.btn-submit').attr("disabled", false);
+    $('input').attr("disabled", false);
+    }
+  })
+}
+})
