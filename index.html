@@ -45,23 +45,23 @@
 								</a> 
 								
 								<div class="short-info"> Teléfono / Whatsapp
-									<a href="tel:51950118191"><h4>950 118 191</h4></a> 
+									<a aria-label="phone" href="tel:51950118191"><h4>950 118 191</h4></a> 
 								</div>
 							</li>
 							<li>
-								<a href="mailto:contacto@cgm.com">
+								<a aria-label="mail" href="mailto:contacto@cgm.com">
 									<i class="fa fa-at"></i>
 								</a>
 								<div class="short-info"> Correo electrónico
-									<a href="mailto:contacto@cgm.com"><h4>contacto@cgm.com</h4></a> 
+									<a aria-label="mail" href="mailto:contacto@cgm.com"><h4>contacto@cgm.com</h4></a> 
 								</div>
 							</li>
 							<li> 
-								<a href="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank">
+								<a aria-label="address"h ref="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank">
 									<i class="fa fa-map-marker"></i>
 								</a>
 								<div class="short-info"> Dirección
-									<a href="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank"><h4>Surquillo | Lima - Perú</h4></a> 
+									<a aria-label="address" href="https://goo.gl/maps/W9HdYSvFG536iLEC7" target="_blank"><h4>Surquillo | Lima - Perú</h4></a> 
 								</div>
 							</li>
 						</ul>
@@ -89,12 +89,13 @@
 										<li><a href="#servicios">Servicios</a></li>
 										<li><a href="#clientes">Clientes</a></li>
 										<li><a href="#proyectos">Proyectos</a></li>
+										<li><a href="#cotizar">Contáctanos</a></li>
 									</ul>
 								</nav>
 							</div>
 						</div>
 					</div>
-					<div class="col-12">
+					<div class="col-12 p-0">
 						<div class="mobile-menu"></div>
 					</div>
 					<!-- main menu area end -->
@@ -492,7 +493,7 @@
 									<div class="single-services-box mt-70 mb-40">
 										<div class="services-icon-box"> <img src="./assets/img/logo-plomo-web.webp" alt="img" width="2915" height="871"/> </div>
 										<h3>Municipalidad de San Borja <span></span></h3>
-										<p class="text-justify">San Borja es un distrito donde se convive con la naturaleza y en el cual se puede respirar un ambiente puro y fresco gracias a todos los árboles que se ...</p>
+										<p class="text-justify">San Borja es un distrito donde se convive con la naturaleza y en el cual se puede respirar un ambiente puro y fresco gracias a todos los árboles que existen.</p>
 									</div>
 								</div>
 								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -525,7 +526,9 @@
 				<div class="row project-slick">
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 						<div class="single-blog-box mb-30 mx-3">
-							<div class="blog-img-date"> <img class="img-responsive" src="assets/img/blog/postes.webp" alt="img"/>
+							<div class="blog-img-date"> 
+								<img class="img-responsive img-desk" src="assets/img/blog/postes.webp" alt="img"/>
+								<img class="img-mob" src="assets/img/blog/postes_mobile.webp" alt="img">
 								<div class="blog-date">abr 2022</div>
 							</div>
 							<div class="blog-content">
@@ -563,7 +566,9 @@
 					</div>
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 						<div class="single-blog-box mb-30 mx-3">
-							<div class="blog-img-date"> <img class="img-responsive" src="assets/img/blog/alcorques.webp" alt="img"/>
+							<div class="blog-img-date"> 
+								<img class="img-responsive img-desk" src="assets/img/blog/alcorques.webp" alt="img"/>
+								<img class="img-mob" src="assets/img/blog/alcorques_mob.webp" alt="img"/>
 								<div class="blog-date">oct 2022</div>
 							</div>
 							<div class="blog-content">
@@ -599,7 +604,9 @@
 					</div>
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 						<div class="single-blog-box mb-30 mx-3">
-							<div class="blog-img-date"> <img class="img-responsive" src="assets/img/blog/soterrado.webp" alt="img"/>
+							<div class="blog-img-date"> 
+								<img class="img-responsive img-desk" src="assets/img/blog/soterrado.webp" alt="img"/>
+								<img class="img-mob" src="assets/img/blog/soterrado_mob.webp" alt="">
 								<div class="blog-date">nov 2022</div>
 							</div>
 							<div class="blog-content">
@@ -649,7 +656,9 @@
 					</div>
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 						<div class="single-blog-box mb-30 mx-3">
-							<div class="blog-img-date"> <img class="img-responsive" src="assets/img/blog/barredora.webp" alt="img" style="height: 282px;"/>
+							<div class="blog-img-date"> 
+								<img class="img-responsive img-desk" src="assets/img/blog/barredora.webp" alt="img"/>
+								<img class="img-mob" src="assets/img/blog/barredora_mob.webp" alt="">
 								<div class="blog-date">en 2020</div>
 							</div>
 							<div class="blog-content">
@@ -733,7 +742,7 @@
 							<div class="col-md-12 p-3">
 								<div class="form-floating">
 									<textarea type="text" class="form-control" placeholder="Descripción" style="background-color: #F4F7FB; color:#373737; " id="lugar" name="descripcion" required></textarea>
-									<label for="floatingInput" style="color: #B2B1B9; " required>DESCRIPCIÓN</label>
+									<label for="floatingInput" style="color: #B2B1B9; " required>MENSAJE / CONSULTA</label>
 								</div>
 							</div>
 							<span id="error_description" class="text-danger"></span>
@@ -832,7 +841,7 @@
 	<!-- scrolltop button -->
 	<div class="material-scrolltop"></div>
 	<div class="whatsapp">
-		<a href="https://wa.me/950118191" target="_blank">
+		<a aria-label="whatsapp" href="https://wa.me/950118191" target="_blank">
 			<!--<img src="./assets/img/whatsapp.webp" width="512" height="512" alt="whatsapp">-->
 		</a>
 	</div>

@@ -407,7 +407,7 @@ ul.header-top-left-info-box li i:after {
 .main-menu nav > ul > li > a {
     color: #282828;
     display: block;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 600;
     padding: 40px 40px;
     transition: all 0.3s ease 0s;
@@ -3379,7 +3379,7 @@ ul.contact-info li a {
     margin-left: 460px;
 }
 ul.header-sub-area {
-    margin-left: 302px
+    margin-left: 134px
 }
 .popup {
     background-color: rgba(0, 0, 0, 0.6);
@@ -3516,7 +3516,15 @@ section {
     right: 15px;
     bottom: 100px;
 }
-
+.custom-html-widget .footer-social {
+    text-align: end;
+}
+.img-desk {
+    display: block;
+}
+.blog-img-date .img-mob {
+    display: none;
+}
 @media (max-width: 360px) {
 
 }
@@ -3537,6 +3545,27 @@ section {
     }
 }
 @media (max-width: 768px) {
+    .about-brief-content-img-box img {
+        display: none;
+    }
+    .about-brief-content-img-box2 img {
+        display: none;
+    }
+    .pt-100 {
+        padding-top:0px;
+    }
+    .mt-70 {
+        margin-top:0px;
+    }
+    .laundryka-about-bg-img img {
+        display: none;
+    }
+    .blog-img-date .img-desk {
+        display: none;
+    }
+    .blog-img-date .img-mob {
+        display: block;
+    }
     .mx-3 {
         margin-right: 2rem!important;
         margin-left: 2rem!important;
@@ -3618,8 +3647,16 @@ section {
     }
     .laundryka-about-content {
         padding-bottom:0px;
+        padding-top: 40px;
+        margin-top: 0px !important;
     }
     .mt-100 {
         margin-top: 0px;
+    }
+    ul.header-top-left-info-box {
+        text-align: center;
+    }
+    .cta-title h3, ul.header-top-left-info-box li {
+        min-width: 185px;
     }
 }
