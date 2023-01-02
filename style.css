@@ -2269,6 +2269,7 @@ ul.price-nav li:nth-child(2) button {
 .laundryka-blog-details-wraper img,
 .single-blog-box img {
     width: 100%;
+    max-height: 282px;
 }
 h4 .post-title {
     display: inline-block;
@@ -3511,6 +3512,11 @@ section {
     padding-top: 120px;
     margin-top: -120px;
 }
+.material-scrolltop.reveal {
+    right: 15px;
+    bottom: 100px;
+}
+
 @media (max-width: 360px) {
 
 }
@@ -3531,6 +3537,13 @@ section {
     }
 }
 @media (max-width: 768px) {
+    .mx-3 {
+        margin-right: 2rem!important;
+        margin-left: 2rem!important;
+    }
+    .mb-100 {
+        margin-bottom: 30px;
+    }
     .logo-start {
         padding:0px;
     }
@@ -3545,10 +3558,11 @@ section {
         padding-bottom: 0px;
     }
     .material-scrolltop {
-        right: 85px;
+        right: 15px;
+        bottom: 100px;
     }
     .whatsapp {
-        right: 65px;
+        right: 15px;
     }
     .laundryka-breadcrumb-area h2 {
         font-size: 60px;
@@ -3578,5 +3592,34 @@ section {
     }
     .single-services-box p{
         font-size: 16px;
+    }
+    .blog-img-date img {
+        max-height: 183px;
+    }
+    .blog-img-date .blog-date {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .slick-next {
+        right: 7px;
+        top: 210px;
+    }
+    .slick-prev {
+        left: 7px;
+        top: 210px;
+    }
+    .laundryka-about-area .back-img {
+        display: block;
+        height: 150px;
+    }
+    .laundryka-about-content {
+        padding-bottom:0px;
+    }
+    .mt-100 {
+        margin-top: 0px;
     }
 }
