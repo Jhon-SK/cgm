@@ -58,6 +58,7 @@
     src: url(./assets/fonts/BebasKai.ttf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
 /* Theme Default */
 * {
