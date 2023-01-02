@@ -3537,8 +3537,11 @@ section {
     }
 }
 @media (max-width: 1386px) {
+    .main-menu nav > ul > li > a {
+        font-size: 17px;
+    }
     ul.header-sub-area {
-        margin-left: 152px;
+        margin-left: 40px;
     }
     .header-top-area .container .row div.header-left {
         margin-left: 403px;
