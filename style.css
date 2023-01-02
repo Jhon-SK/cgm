@@ -3341,23 +3341,28 @@ ul.contact-info li a {
 }
 
 .slick-next {
-    background: url("./assets/img/arrow.png");
+    background: url("./assets/img/arrow-next.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .slick-prev {
-    background: url("./assets/img/arrow.png");
+    background: url("./assets/img/arrow-prev.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .whatsapp {
-    max-width: 80px;
+    width: 56px;
+    height: 56px;
     position: fixed;
     z-index: 9999;
     right: 15px;
     bottom: 30px;
+    border-radius: 50%;
+    box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+    -webkit-box-shadow: 0 6px 8px 2px rgb(0 0 0 / 14%);
+    -moz-box-shadow: 0 6px 8px 2px rgba(0,0,0,.14);
 }
 
 .text-justify {
@@ -3476,11 +3481,34 @@ ul.header-sub-area {
     margin-bottom: 0;
 }
 .footer-single-wedget .widget_nav_menu .menu li a:hover {
-    color: grey;
+    color: #ffffff;
 }
 
 li a i:hover {
     color: grey;
+}
+.form-group{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+.whatsapp a{
+    width: 100%;
+    height: 100%;
+    background: url(./assets/img/ws.svg) no-repeat 50% rgb(45, 183, 66);
+    -webkit-background-size: 30px auto;
+    -moz-background-size: 30px auto;
+    display: block;
+    border-radius: 50%;
+    
+}
+.slick-next.slick-disabled,  .slick-prev.slick-disabled, .slick-arrow.slick-disabled{
+    opacity: 0;
+    pointer-events: none;
+}
+section {
+    padding-top: 120px;
+    margin-top: -120px;
 }
 @media (max-width: 360px) {
 
