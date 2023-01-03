@@ -9,52 +9,6 @@
 
 
 $(document).ready(function(){
-    $(".btn-more").click(function(e){
-       $(this).parent().prev().find('.more').fadeToggle();
-       $(this).parent().prev().find('.dots').toggle();
-       $(this).toggleClass('active')
-       if($(this).hasClass('active')){
-        $(this).text('Leer menos');
-       }
-       else{
-        $(this).text('Leer más');
-       }
-    });
-
-    $('.project-slick').slick({
-      slidesToShow: 3,
-      dots: false,
-      arrows: true,
-      infinite: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-      });
       $('#numero_documento').maxlength({max: 8, showFeedback: false});
       $('#nombre').maxlength({max: 50, showFeedback: false});
       $('#telefono').maxlength({max: 9, showFeedback: false});
@@ -89,7 +43,53 @@ $(document).ready(function(){
       
       }
  });
-
+ $('.project-slick').slick({
+  slidesToShow: 3,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeigh: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeigh: true,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+ $(".btn-more").click(function(e){
+   $(this).parent().prev().find('.more').fadeToggle();
+   $(this).parent().prev().find('.dots').toggle();
+   $(this).toggleClass('active')
+   if($(this).hasClass('active')){
+    $(this).text('Leer menos');
+   }
+   else{
+    $(this).text('Leer más');
+   }
+});
       
  $('#numero_documento').maxlength({max: 8, showFeedback: false});
  $('#nombre').maxlength({max: 50, showFeedback: false});

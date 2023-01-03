@@ -3525,6 +3525,11 @@ section {
 .blog-img-date .img-mob {
     display: none;
 }
+.btn-submit{
+    width: 175px;
+    height: 48px;
+    padding: 8px 16px;
+}
 @media (max-width: 360px) {
 
 }
@@ -3551,6 +3556,7 @@ section {
     .about-brief-content-img-box img {
         display: none;
     }
+  
     .about-brief-content-img-box2 img {
         display: none;
     }
