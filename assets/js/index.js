@@ -79,6 +79,14 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
+  $('.services-img').slick({
+    dots: false,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    variablewidth: true,
+  })
  $(".btn-more").click(function(e){
    $(this).parent().prev().find('.more').fadeToggle();
    $(this).parent().prev().find('.dots').toggle();
