@@ -3707,7 +3707,7 @@ span.line {
         margin-top: 0px;
     }
     ul.header-top-left-info-box {
-        text-align: left;
+        text-align: center;
     }
     .cta-title h3, ul.header-top-left-info-box li {
         /* min-width: 185px; */
