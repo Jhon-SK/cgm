@@ -1195,7 +1195,7 @@ ul.laundryka-slider2-top-tag-box li:nth-child(3) {
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    font-family: 'CenturyGothic';
+    font-family: 'BebasKai';
 }
 
 .about-chariti-list-area {
@@ -1205,7 +1205,7 @@ ul.laundryka-slider2-top-tag-box li:nth-child(3) {
 
 .laundryka-about-content h2 span {
     color: #F1C232;
-    font-family: 'CenturyGothic';
+    font-family: 'BebasKai';
 }
 
 .laundryka-about-content h2:before {
@@ -1231,10 +1231,11 @@ ul.about-chariti-list:first-child {
 }
 
 ul.about-chariti-list li {
-    font-size: 26px;
+    font-size: 20px;
     color: #37393e;
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'CenturyGothic';
 }
 
 ul.about-chariti-list li a {
@@ -1245,6 +1246,7 @@ ul.about-chariti-list li a {
 }
 .laundryka-about-content p {
     font-size: 24px;
+    font-family: 'CenturyGothic';
 }
 ul.about-chariti-list li i {
     color: #F1C232;;
@@ -1476,7 +1478,7 @@ ul.about-chariti-list li i {
     width: 100%;
 }
 
-.services-icon-box:after {
+/* .services-icon-box:after {
     position: absolute;
     content: '';
     top: 0;
@@ -1508,7 +1510,7 @@ ul.about-chariti-list li i {
 .single-services-box:hover :before {
     bottom: -8px;
     right: -8px;
-}
+} */
 
 .single-services-box h3 {
     text-transform: capitalize;
@@ -3330,10 +3332,12 @@ ul.contact-info li a {
 
 .text {
     margin-bottom: 0px;
+    font-family: 'CenturyGothic';
 }
 
 .more {
     display: none;
+    font-family: 'CenturyGothic'
 }
 
 .btn-more {
@@ -3343,6 +3347,7 @@ ul.contact-info li a {
     padding: 15px 20px;
 }
 .about-brief-content-box p {
+    font-family: 'CenturyGothic';
     font-size: 24px;
 }
 
@@ -3490,7 +3495,7 @@ ul.header-sub-area {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 0;
-    font-family: 'CenturyGothic';
+    font-family: 'BebasKai';
     color: black;
 }
 .laundryka-services-area .container .row div .single-services-box .services-icon-box {
@@ -3557,7 +3562,7 @@ section {
     height:156.75px;
 }
 .laundryka-services-area h2 {
-    font-family: 'CenturyGothic';
+    font-family: 'BebasKai';
     font-weight: 700;
     
 }
