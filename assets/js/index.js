@@ -80,7 +80,7 @@ $(document).ready(function(){
   ]
   });
   $('.services-img').slick({
-    dots: false,
+    dots: true,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
